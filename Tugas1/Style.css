@@ -1,0 +1,261 @@
+body{
+    background-color: #9BD770;
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+list-style: none;
+text-decoration: none;
+}
+
+:root{
+    --text-color:#fff;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+    --hd-color:#66B032;
+}
+header{
+    position: relative;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 140px;
+    background: var(--hd-color);
+    box-shadow: 0px 10px 37px -3px rgba(0,0,0,0.1);
+}
+.logotext{
+    font-weight: bolder;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color:var(--text-color);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    font-weight: 500;    
+    font-family: "Sigmar", sans-serif;
+}
+
+.navbar a:hover{
+    color: #9BD770;
+    transition: 0.4s;
+    background-color: aliceblue;
+    border-radius: 28px;
+    transition: 0.3s;
+}
+
+.nav-icon i{
+    vertical-align: middle;
+    font-size: 25px;
+    margin-right: 8px;
+    transition: all 0.5s ease;
+}
+.boxed {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-txt {
+    position: absolute;
+    top:90px;
+    font-size: 120px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+}
+
+.paragraf{
+    color: #EBF7E3;
+    margin-top: 98px;
+    font-weight: 600;
+    font-family: "Cantora One", sans-serif;
+    font-style: normal;
+}
+.niggo {
+    color: #EBF7E3; /* Warna untuk teks "NIGGO" */
+    font-family: "Sigmar", sans-serif;
+}
+
+.resto {
+    color: #1B3409; /* Warna untuk teks "RESTO" */
+    font-family: "Sigmar", sans-serif;
+}   
+
+.tb-masuk {
+    position: absolute; /* Menjadikan posisi absolut */
+    top: calc(70% + 10px); /* Mengatur jarak antara teks dan tombol */
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #375F1B;
+    color: #9BD770;
+    border: 0px;
+    border-radius: 16px;
+    padding: 15px 30px;
+    font-family:"Sigmar", sans-serif ;
+}
+
+.tb-masuk:hover{
+    background-color:#61a431;
+    color: #EBF7E3;
+}
+
+.menu-lst{
+    margin-top: 598px;
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    border-radius: 20px;
+    bottom: auto;
+    padding-bottom: 2%;
+}
+.box-menu{
+    margin-top: 622px;
+    margin-left: 10px;
+}
+.resto-txt{
+    font-family: arial;
+    padding-top: 50px;
+    font-weight: bolder;
+    font-family:"Sigmar", sans-serif ; 
+}
+.menu-judul{
+    color: #000000;
+    font-family:"Sigmar", sans-serif ;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.g1{
+    width: 520px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 0px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.card {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    margin: 40px;
+    box-shadow: 0px 1px 13px #0000001a;
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 15%;
+    border: 0px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+.card:hover{
+    background-color: #a6d485;
+    border: 0px;
+    border-radius: 20px;
+}
+.card .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    top: 320px;
+    font-weight: 700;
+    font-style: normal;
+    /* font-weight: bolder; */
+    color: #000;
+}
+
+.card .price {
+    position: absolute; /* Menjadikan posisi absolut */
+    top: 380px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #375F1B;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 16px;
+    padding: 15px 30px;
+    font-family:"Sigmar", sans-serif ;
+}
+.card .price:hover{
+    color: #61a431;
+    background-color: #1b310d;
+}
+.card:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.text {
+    max-width: 55px;
+}
+
+.image {
+    /* background-image: url(Images/Makanan/1679123888211-IMG_20230318_141526.jpg); */
+    width: 100%;
+    height: 190px;
+    display: grid;
+    place-items: center;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.image:hover{
+    background-color: #00000081;
+}
+.txt-sub {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    top: 245px;
+    text-align: center;
+}
+.contain-image{
+    position: relative;
+    display: flex;
+}
+.contain-image-2{
+    position: relative;
+    display: flex;
+}
+.minum-lst{
+    margin-top: -540px;
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    border-radius: 20px;
+}
+.foot{
+    align-items: center;
+    background-color: #375F1B;
+    margin-top: 30px;
+    text-align: center;
+    color: #EBF7E3;
+    font-family: arial;
+    font-weight: bolder;
+    padding: 20px;
+}
